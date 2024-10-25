@@ -54,3 +54,46 @@
 - 매일 아침마다 노션에 생성한 데일리 스크름에 오늘 할 일, 진행 중, 어려운 점 등을 작성하여 화면을 공유해가면서 진행상황을 체크했습니다.
 - 매일 오후 1시부터 6시까지 코어타임을 정하여 메타버스 ZEP환경에서 모각코를 진행하였습니다.
 - PR이 올라가서 merge가 되면 팀채팅방에 알려준 뒤 모두 브랜치를 최신화시켰는지 확인하였습니다.
+
+</br>
+
+## 프로젝트 폴더 구조
+
+
+```
+epigram
+├─ .eslintrc.json
+├─ .gitignore
+├─ .prettierrc
+├─ .prettierrc.json
+├─ next.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ public
+│  └─ assets
+│     ├─ font // 폰트 파일
+│     ├─ icons // svg 파일
+│     └─ images // png 파일
+│ 
+├─ README.md
+├─ src
+│  ├─ api
+│  │  ├─ client // 클라이언트 컴포넌트 API 요청 함수 모음
+│  │  └─ server // 서버 컴포넌트 API 요청 함수 모음
+│  ├─ app // 기본 페이지 폴더
+│  │  
+│  ├─ components // 페이지가 아닌 컴포넌트 모음
+│  │  ├─ epigramsPage // 해당 페이지에 필요한 컴포넌트 폴더 생성
+│  │  │  ├─ TodayEmoji.tsx
+│  │  │  └─ TodayEmotion.tsx // 필요한 컴포넌트 생성
+│  ├─ contexts // 전역관리함수 폴더
+│  │  ├─ AuthContext.tsx
+│  │  └─ QueryProvider.tsx
+│  ├─ types // 재사용가능한 타입들 모아 놓는 폴더
+│  │  ├─ card.ts
+│  └─ utils // 훅이아닌 필요로 하는 유틸파일들
+├─ tailwind.config.ts
+└─ tsconfig.json
+
+```
